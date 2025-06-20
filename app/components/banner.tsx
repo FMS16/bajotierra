@@ -11,7 +11,7 @@ const Banner = () => {
         </h1>
       </div>
       <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-center">
-        <button className="bg-white/10 backdrop-blur-md p-5 rounded-full cursor-pointer">
+        <button className="bg-white/10 backdrop-blur-md p-5 rounded-full cursor-pointer" aria-label="Scroll down">
           <FontAwesomeIcon className="w-5 h-5 text-white opacity-50" icon={faChevronDown} />
         </button>
       </div>
