@@ -6,11 +6,13 @@ import Header from "./components/header";
 const anton = Anton({
   variable: "--font-vietnam",
   weight: "400",
+  subsets: ["latin"],
 });
 
 const pirata = Pirata_One({
   variable: "--font-pirata",
   weight: "400",
+  subsets: ["latin"],
 });
 
 
