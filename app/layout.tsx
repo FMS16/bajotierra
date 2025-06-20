@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Anton, Pirata_One} from "next/font/google";
+import { Playfair_Display, Pirata_One} from "next/font/google";
 import "./globals.css";
 import Header from "./components/header";
 
-const anton = Anton({
-  variable: "--font-vietnam",
+const poppins = Playfair_Display({
+  variable: "--font-poppins",
   weight: "400",
   subsets: ["latin"],
 });
@@ -29,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${anton.variable} ${pirata.variable} antialiased bg-customized text-white`}
+        className={`${poppins.variable} ${pirata.variable} antialiased bg-customized text-white min-h-screen`}
       >
         <Header />
         {children}
