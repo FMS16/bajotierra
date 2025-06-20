@@ -1,10 +1,16 @@
 import type { Metadata } from "next";
-import { Be_Vietnam_Pro} from "next/font/google";
+import { Anton, Pirata_One} from "next/font/google";
 import "./globals.css";
+import Header from "./components/header";
 
-const vietnam = Be_Vietnam_Pro({
+const anton = Anton({
   variable: "--font-vietnam",
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  weight: "400",
+});
+
+const pirata = Pirata_One({
+  variable: "--font-pirata",
+  weight: "400",
 });
 
 
@@ -21,8 +27,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${vietnam.variable} antialiased`}
+        className={`${anton.variable} ${pirata.variable} antialiased bg-customized text-white`}
       >
+        <Header />
         {children}
       </body>
     </html>
